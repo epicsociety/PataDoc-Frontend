@@ -1,0 +1,212 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ecf0f1;
+}
+
+/* .container {
+  max-width: auto;
+  margin: auto;
+} */
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: auto;
+  margin: 1rem;
+  border-radius: 0.94rem;
+  border: 1px solid #007ab6;
+  background-color: #b3cada8f;
+  padding: 1.25rem;
+  flex: 1;
+}
+
+.column {
+  flex: 1;
+  padding: 1.25rem;
+  text-align: center;
+  border-radius: 1.25rem;
+  margin: 0.625rem;
+}
+
+h2 {
+  color: #02090a;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.headers {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #00bcd4;
+}
+
+h3 {
+  font-size: 1.125rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  color: #02090a;
+  display: flex;
+  padding: 0px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+b {
+  color: #02090a;
+  display: flex;
+  padding: 0px;
+  text-align: center;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 2rem;
+  text-decoration: none;
+  margin-top: 0.625rem;
+  margin-left: 0.625rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0px;
+}
+
+/* New "What We Do" section */
+.services-header {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #00bcd4;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.what-we-do-column {
+  flex: 1;
+  padding: 1.25rem;
+  border-radius: 0.94rem;
+  margin: 0.6rem;
+  color: #fff;
+  border: 1px solid #007ab6;
+}
+.what-we-do {
+  margin: 0.94rem;
+  padding: 1.25rem;
+  margin-bottom: 3%;
+}
+.what-we-do-header {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #00bcd4;
+}
+
+.what-we-do-header-text {
+  max-width: fit-content;
+  width: auto;
+}
+.Why-us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  background-color: #b3cada8f;
+  margin: 0.94rem;
+  flex: 1;
+  padding: 1.25rem;
+  border-radius: 0.94rem;
+  border: 1px solid #007ab6;
+}
+.why-us-column {
+  flex: 1;
+  padding: 1.25rem;
+  text-align: center;
+  border-radius: 0.62rem;
+  margin: 0.62rem;
+}
+.bottom-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 1.25rem;
+  height: 0.125rem;
+  background-color: #3498db;
+}
+
+.bottom-arrow {
+  bottom: -1.25rem;
+}
+.bottom-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg); /* Updated rotation to -45 degrees */
+  width: 1.25rem;
+  height: 0.125rem;
+  background-color: #3498db;
+}
+
+/* Media queries for responsiveness */
+
+/* Styles for screens with a maximum width of 48rem (e.g., tablets and smaller) */
+/* @media screen and (max-width: 48rem) {
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-top: 0.5rem;
+  }
+} */
+
+/* Styles for screens with a maximum width of 36rem (e.g., mobile phones) */
+@media screen and (max-width: 36rem) {
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .Why-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    background-color: #b3cada8f;
+    margin: 0.94rem;
+  }
+}
