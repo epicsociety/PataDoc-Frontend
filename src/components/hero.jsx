@@ -55,8 +55,8 @@ const Hero = () => {
               treasures.
             </p>
             <span
-              class="bottom-arrow"
-              onclick="location.href='#link-to-doctors'"
+              // class="bottom-arrow"
+              onclick="location.href='#a-to-doctors'"
             >
               ➡️
             </span>
@@ -71,8 +71,8 @@ const Hero = () => {
               the surgical journey.
             </p>
             <span
-              class="bottom-arrow"
-              onclick="location.href='#link-to-doctors'"
+              // class="bottom-arrow"
+              onclick="location.href='#a-to-doctors'"
             >
               ➡️
             </span>
@@ -87,8 +87,8 @@ const Hero = () => {
               healthcare services, we are here for you.
             </p>
             <span
-              class="bottom-arrow"
-              onclick="location.href='#link-to-doctors'"
+              // class="bottom-arrow"
+              onclick="location.href='#a-to-doctors'"
             >
               ➡️
             </span>
@@ -131,6 +131,114 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      <div class="Why-us">
+        <div class="about-us">
+          <h2 class="headers">About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            rem ullam, officiis, corrupti, dicta esse pariatur cupiditate sequi
+            dignissimos natus aliquam quisquam alias non vel provident!
+            Doloremque esse magnam blanditiis!
+          </p>
+          <h2 class="header-about-us">Your Solutions</h2>
+          <ul>
+            <li>Choose a Specialist</li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              incidunt suscipit soluta quos fugit et autem molestias
+            </p>
+            <li>Make a Schedule</li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              incidunt suscipit soluta quos fugit et autem molestias
+            </p>
+            <li>Get your Solutions</li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              incidunt suscipit soluta quos fugit et autem molestias
+            </p>
+          </ul>
+        </div>
+        <div class="column">
+          <img src="/doctor3.PNG" alt="Doctor Image" />
+        </div>
+      </div>
+
+      <div class="what-we-do">
+        <h2 class="specialist-header">Meet Our Specialist Doctor</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eos
+          velit amet alias iste accusantium sed, natus repellat, hic quae ipsam.
+          Ipsam, praesentium adipisci. Minima eveniet omnis culpa distinctio
+          quia.
+        </p>
+        <div class="services">
+          <div class="what-we-do-column">
+            <img src="/doctor4.PNG" alt="Doctor Image" />
+            <h2>Dr. Shojib Ahmed</h2>
+            <p>General Surgeon</p>
+          </div>
+          <div class="what-we-do-column">
+            <img src="/doctor5.PNG" alt="Doctor Image" />
+            <h2>Dr. Shojib Ahmed</h2>
+            <p>General Surgeon</p>
+          </div>
+          <div class="what-we-do-column">
+            <img src="/doctor6.PNG" alt="Doctor Image" />
+            <h2>Dr. Shojib Ahmed</h2>
+            <p>General Surgeon</p>
+          </div>
+          <div class="what-we-do-column">
+            <img src="/doctor7.PNG" alt="Doctor Image" />
+            <h2>Dr. Shojib Ahmed</h2>
+            <p>General Surgeon</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div>
+            <img src="/footer-logo.PNG" alt="" />
+            <a>NewsLetter</a>
+            <a>Heart Disease</a>
+            <a>Dental Care</a>
+          </div>
+
+          <ul>
+            <h2>Services</h2>
+            <a href="/specialists" class="footer-links">
+              Book Appointment{" "}
+            </a>
+            <a href="/specialists" class="footer-links">
+              Emergencies
+            </a>
+            <a href="/specialists" class="footer-links">
+              Heart Disease
+            </a>
+          </ul>
+
+          <ul>
+            <h2>Links</h2>
+            <a href="/home" class="footer-links">
+              Home{" "}
+            </a>
+            <a href="/about" class="footer-links">
+              About
+            </a>
+            <a href="/contact" class="footer-links">
+              Contact Us
+            </a>
+          </ul>
+        </div>
+        <div class="footer-base">
+          <h2>Winfred & Isaac </h2>
+          <div class="Divider"></div>
+          <p>
+            &copy; Copyright Patadoc {new Date().getUTCFullYear()}. All right
+            reserved
+          </p>
+        </div>
+      </footer>
 
       {/* </div> */}
     </>
