@@ -1,10 +1,8 @@
 import logo from "/patadoc_icon.jpg";
-import Button from "./button";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import Auth from "./auth";
 import NavLink from "./navlinks";
-// import ReportIssueButton from "./ReportIssueButton";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 const navLinks = [

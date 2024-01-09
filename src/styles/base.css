@@ -25,11 +25,11 @@ body {
 }
 
 .column {
-  flex: 1;
-  padding: 1.25rem;
+  /* flex: 1; */
+  padding: 1.2rem;
   text-align: center;
   border-radius: 1.25rem;
-  margin: 0.625rem;
+  margin: 0.3em;
 }
 
 h2 {
@@ -57,13 +57,14 @@ p {
   display: flex;
   padding: 0px;
   text-align: center;
-  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2em;
 }
 
 b {
   color: #02090a;
   display: flex;
-  padding: 0px;
   text-align: center;
   margin-top: 1rem;
   justify-content: center;
@@ -71,19 +72,24 @@ b {
 
 .btn {
   display: inline-block;
-  padding: 0.625rem 1.25rem;
+  padding: 0.625rem 0.625rem;
   background-color: #00bcd4;
   color: #fff;
   border-radius: 2rem;
-  text-decoration: none;
   margin-top: 0.625rem;
   margin-left: 0.625rem;
 }
 
+.btn:hover {
+  background-color: rgb(102, 235, 102);
+}
+
 img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
-  margin-top: 0px;
+  margin-top: 0.2em;
+  width: auto;
+  border-radius: 0.5rem;
 }
 
 /* New "What We Do" section */
@@ -113,7 +119,7 @@ img {
 .what-we-do {
   margin: 0.94rem;
   padding: 1.25rem;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 .what-we-do-header {
   font-size: 2rem;
@@ -170,18 +176,108 @@ img {
   background-color: #3498db;
 }
 
+.about-us {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  text-align: left;
+  border-radius: 0.62rem;
+  justify-content: left;
+  align-items: flex-start;
+  margin: 0.62rem;
+  font-size: 1.2em;
+}
+
+.about-us p {
+  text-align: left;
+}
+
+.header-about-us {
+  margin-top: 1rem;
+}
+
+.about-us ul {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  list-style-type: circle;
+  font-size: 0.8em;
+  margin-left: 1.2rem;
+  font-weight: 600;
+}
+.about-us ul p {
+  font-size: 0.9em;
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.specialist-header {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #00bcd4;
+}
+
+.footer {
+  display: flex;
+
+  gap: 0.9rem;
+  align-items: center;
+  background-color: lightgrey;
+  padding: 1rem;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-base {
+  background-color: lightgrey;
+}
+.Divider {
+  border-bottom: 1px solid black; /* adjust as needed */
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
 /* Media queries for responsiveness */
 
 /* Styles for screens with a maximum width of 48rem (e.g., tablets and smaller) */
-/* @media screen and (max-width: 48rem) {
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: #000000;
-    margin-top: 0.5rem;
+@media screen and (max-width: 48rem) {
+  .services {
+    display: flex;
+    flex-direction: column;
   }
-} */
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .Why-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    background-color: #b3cada8f;
+    margin: 0.94rem;
+  }
+}
 
 /* Styles for screens with a maximum width of 36rem (e.g., mobile phones) */
 @media screen and (max-width: 36rem) {
@@ -208,5 +304,13 @@ img {
     height: auto;
     background-color: #b3cada8f;
     margin: 0.94rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 }
